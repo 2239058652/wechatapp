@@ -1,0 +1,946 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页,
+		{
+			"path": "pages/index/index",
+			"style": 
+				{
+					"navigationBarTitleText": "平安景洪",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+		}, {
+			"path": "pages/login/login",
+			"style":
+				{
+					"navigationBarBackgroundColor": "#404142",
+					"navigationBarTitleText": "平安景洪",
+					"enablePullDownRefresh": true
+				}
+		}, {
+			"path": "pages/infomation/newlist/newlist",
+			"style":
+				{
+					"navigationBarTitleText": "平安景洪",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"enablePullDownRefresh": true
+				}
+		}, {
+			"path": "pages/infomation/newlist/view",
+			"style":
+				{
+					"navigationBarTitleText": "平安景洪",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"enablePullDownRefresh": true
+				}
+		}, {
+			"path": "pages/main/main",
+			"style": {
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "平安景洪",
+				"enablePullDownRefresh": true,
+				"navigationBarTextStyle": "black"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "eventReport",
+		"pages": [
+			{
+				"path": "register/index",
+				"style": { "navigationBarTitleText": "平安景洪" }
+			},{
+				"path": "eventhandle/index",
+				"style": { "navigationBarTitleText": "待办事件" }
+			}, {
+				"path": "eventhandle/detail/detail",
+				"style": { "navigationBarTitleText": "待办事件" }
+			}, {
+				"path": "eventhandle/selectOrg/selectOrg",
+				"style": { "navigationBarTitleText": "选择机构" }
+			}, {
+				"path": "eventhandle/detail/scenarioIndex",
+				"style": { "navigationBarTitleText": "事件分类" }
+			}, {
+				"path": "eventhandle/detail/fineItemList",
+				"style": { "navigationBarTitleText": "事件分类查询" }
+			}, {
+				"path": "eventhandle/detail/scenarioDetailList",
+				"style": { "navigationBarTitleText": "事件分类明细" }
+			}, {
+				"path": "eventhandle/donelist/donelist",
+				"style": { "navigationBarTitleText": "已处理事件" }
+			}, {
+				"path": "eventhandle/view/view",
+				"style": { "navigationBarTitleText": "事件详情" }
+			}, {
+				"path": "eventhandle/mapview/mapview",
+				"style": { "navigationBarTitleText": "网格信息" }
+			}, {
+				"path": "eventhandle/presslist/presslist",
+				"style": { "navigationBarTitleText": "催办事件" }
+			}, {
+				"path": "eventreporting/eventreporting",
+				"style":
+					{
+						"navigationBarTitleText": "事件报送",
+						"navigationBarTextStyle": "white"
+					}
+			}, {
+				"path": "eventreporting/todolist/todolist",
+				"style": { "navigationBarTitleText": "研判分流" }
+			}, {
+				"path": "eventreporting/detail/detail",
+				"style": { "navigationBarTitleText": "研判分流" }
+			}, {
+				"path": "eventreporting/selectOrg/selectOrg",
+				"style": { "navigationBarTitleText": "选择机构" }
+			}, {
+				"path": "leaderapprove/list/list",
+				"style": { "navigationBarTitleText": "事件审批" }
+			}, {
+				"path": "leaderapprove/detail/detail",
+				"style": { "navigationBarTitleText": "事件审批" }
+			}, {
+				"path": "statistics/performance/performance",
+				"style":
+					{
+						"navigationBarTitleText": "数据统计",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "statistics/eventlist/eventlist",
+				"style":
+					{
+						"navigationBarTitleText": "事件列表",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "user/user",
+				"style":
+				{
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTitleText": "个人中心",
+					"navigationBarTextStyle": "black",
+					"enablePullDownRefresh": true
+				}
+			}, {
+				"path": "user/userinfo/userinfo",
+				"style": { "navigationBarTitleText": "个人信息" }
+			}, {
+				"path": "user/modifypassword/modifypassword",
+				"style": { "navigationBarTitleText": "修改密码" }
+			}, {
+				"path": "user/borderOrganization/index",
+				"style": { "navigationBarTitleText": "防控点位置信息" }
+			}, {
+				"path": "scenario/index",
+				"style":
+					{
+						"navigationBarTitleText": "事件分类管理",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "scenario/disputesIndex",
+				"style":
+					{
+						"navigationBarTitleText": "矛盾纠纷事件分类",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "scenario/scenario",
+				"style":
+					{
+						"navigationBarTitleText": "事件报送场景",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "scenario/scenarioList",
+				"style":
+					{
+						"navigationBarTitleText": "事件分类明细",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "scenario/fineItemList",
+				"style":
+					{
+						"navigationBarTitleText": "事件分类明细",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "scenario/scenarioDetailList",
+				"style":
+					{
+						"navigationBarTitleText": "事件分类查询",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "informationSubmit/submit",
+				"style": { "navigationBarTitleText": "信息报送" }
+			}, {
+				"path": "keydatareport/list/list",
+				"style": { "navigationBarTitleText": "辖区数据填报" }
+			}, {
+				"path": "keydatareport/detail/detail",
+				"style": { "navigationBarTitleText": "辖区数据填报" }
+			}, {
+				"path": "keydatareport/view/view",
+				"style": { "navigationBarTitleText": "数据详情" }
+			}, {
+				"path": "keydatareport/viewlist/viewlist",
+				"style": { "navigationBarTitleText": "辖区数据情况" }
+			}, {
+				"path": "statisticalReports/index",
+				"style": { "navigationBarTitleText": "统计报表" }
+			}, {
+				"path": "docmanagement/inboxlist/inboxlist",
+				"style":{ "navigationBarTitleText": "收件箱" }
+			}, {
+				"path": "docmanagement/docsendpersonal/docsendpersonal",
+				"style": { "navigationBarTitleText": "发送邮件" }
+			}, {
+				"path": "docmanagement/sendboxlist/sendboxlist",
+				"style": { "navigationBarTitleText": "发件箱" }
+			}, {
+				"path": "docmanagement/sendorg/sendorg",
+				"style": { "navigationBarTitleText": "发送机构邮件" }
+			}, {
+				"path": "docmanagement/selectOrg/selectOrg",
+				"style":{ "navigationBarTitleText": "选择收件机构" }
+			}, {
+				"path": "docmanagement/sendperson/sendperson",
+				"style": { "navigationBarTitleText": "发送个人邮件" }
+			}, {
+				"path": "docmanagement/selectUser/selectUser",
+				"style": { "navigationBarTitleText": "选择收件人" }
+			}, {
+				"path": "docmanagement/senddetail/senddetail",
+				"style":{ "navigationBarTitleText": "邮件详情" }
+			}, {
+				"path": "docmanagement/receivedetail/receivedetail",
+				"style":{ "navigationBarTitleText": "邮件详情" }
+			}, {
+				"path": "noticemanagement/list/list",
+				"style":{ "navigationBarTitleText": "通知公告" }
+			}, {
+				"path": "noticemanagement/sendnotice/sendnotice",
+				"style":{ "navigationBarTitleText": "发通知公告" }
+			}, {
+				"path": "noticemanagement/selectOrg/selectOrg",
+				"style":{ "navigationBarTitleText": "选择接收机构" }
+			}, {
+				"path": "noticemanagement/detail/detail",
+				"style": { "navigationBarTitleText": "通知详情" }
+			}, {
+				"path": "mapinfo/index/index",
+				"style": { "navigationBarTitleText": "网格信息" }
+			}, {
+				"path": "workreport/list/list",
+				"style": { "navigationBarTitleText": "工作上报情况" }
+			}, {
+				"path": "workreport/detail/detail",
+				"style": { "navigationBarTitleText": "工作上报详情" }
+			}, {
+				"path": "workreport/viewlist/viewlist",
+				"style": { "navigationBarTitleText": "工作上报情况" }
+			}, {
+				"path": "workreport/view/view",
+				"style": { "navigationBarTitleText": "工作上报详情" }
+			}, {
+				"path": "news/list",
+				"style": { "navigationBarTitleText": "平安景洪" }
+			}, {
+				"path": "news/view",
+				"style": { "navigationBarTitleText": "平安景洪" }
+			}, {
+				"path": "eventlist/borderlist/borderlist",
+				"style":
+					{
+						"navigationBarTitleText": "防控日报",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "eventlist/bordersummary/bordersummary",
+				"style":
+					{
+						"navigationBarTitleText": "防控日报",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "keyReport/index",
+				"style":
+					{
+						"navigationBarTitleText": "监督举报",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "keyReport/list/list",
+				"style":
+					{
+						"navigationBarTitleText": "监督举报",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "keyReport/list/publicList",
+				"style":
+					{
+						"navigationBarTitleText": "我的填报",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "keyReport/view/view",
+				"style":
+					{
+						"navigationBarTitleText": "填报信息",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "keyReport/view/publicView",
+				"style":
+					{
+						"navigationBarTitleText": "填报信息",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "massAppeal/index",
+				"style":
+					{
+						"navigationBarTitleText": "群众诉求",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "massAppeal/appealTypeList",
+				"style":
+					{
+						"navigationBarTitleText": "诉求类型",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "massAppeal/list/list",
+				"style":
+					{
+						"navigationBarTitleText": "群众诉求",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "massAppeal/list/publicList",
+				"style":
+					{
+						"navigationBarTitleText": "我的填报",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "massAppeal/view/view",
+				"style":
+					{
+						"navigationBarTitleText": "诉求信息",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "massAppeal/view/publicView",
+				"style":
+					{
+						"navigationBarTitleText": "诉求信息",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/integral/index",
+				"style":
+					{
+						"navigationBarTitleText": "积分管理",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "questionnaire/index/index",
+				"style":
+					{
+						"navigationBarTitleText": "平安景洪",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#FFFFFF"
+					}
+			}, {
+				"path": "questionnaire/answer/answer",
+				"style":
+					{
+						"navigationBarTitleText": "平安景洪",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#FFFFFF"
+					}
+			}, {
+				"path": "IntegralManagement/integral/list",
+				"style":
+					{
+						"navigationBarTitleText": "积分明细",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/peaceBeans/businessCenter",
+				"style":
+					{
+						"navigationBarTitleText": "商家中心",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/peaceBeans/index",
+				"style":
+					{
+						"navigationBarTitleText": "平安豆",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/peaceBeans/list",
+				"style":
+					{
+						"navigationBarTitleText": "平安豆明细",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/peaceBeans/exchange",
+				"style":
+					{
+						"navigationBarTitleText": "平安豆兑换",
+						"enablePullDownRefresh": false
+					}
+			},  {
+				"path": "IntegralManagement/peaceBeans/exchangeList",
+				"style":
+					{
+						"navigationBarTitleText": "兑换记录",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/peaceBeans/identification",
+				"style":
+					{
+						"navigationBarTitleText": "超市收银",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/peaceBeans/identificationCenter",
+				"style":
+					{
+						"navigationBarTitleText": "商家中心收银",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/peaceBeans/identificationList",
+				"style":
+					{
+						"navigationBarTitleText": "收银记录",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/peaceBeans/businessExchange",
+				"style":
+					{
+						"navigationBarTitleText": "现金结算",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/peaceBeans/busineseExchangeList",
+				"style":
+					{
+						"navigationBarTitleText": "结算记录",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/peaceBeans/managerIdentification",
+				"style":
+					{
+						"navigationBarTitleText": "现金结算确认",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "IntegralManagement/peaceBeans/managerIdentificationList",
+				"style":
+					{
+						"navigationBarTitleText": "现金结算确认记录",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "strongAndSolidProof/index",
+				"style":
+					{
+						"navigationBarTitleText": "点长日报",
+						"enablePullDownRefresh": false
+					}
+			},{
+				"path": "strongAndSolidProof/segmentDaily/index",
+				"style":
+					{
+						"navigationBarTitleText": "段长日报",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "strongAndSolidProof/segmentDaily/list",
+				"style":
+					{
+						"navigationBarTitleText": "填报记录",
+						"enablePullDownRefresh": false,
+						"onReachBottomDistance":50
+					}
+			},
+			{
+				"path": "strongAndSolidProof/dailyReport/view/viewDaily",
+				"style": 
+					{
+						"navigationBarTitleText": "日常工作汇总",
+						"enablePullDownRefresh": false
+					}
+			},
+			{
+				"path": "strongAndSolidProof/dailyReport/view/viewCase",
+				"style":
+					{
+						"navigationBarTitleText": "案件汇总",
+						"enablePullDownRefresh": false
+					}
+			},{
+				"path": "strongAndSolidProof/list/list",
+				"style":
+					{
+						"navigationBarTitleText": "填报记录",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "strongAndSolidProof/view/view",
+				"style":
+					{
+						"navigationBarTitleText": "填报详情",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "strongAndSolidProof/dailyReport/index",
+				"style":
+					{
+						"navigationBarTitleText": "防控日报统计",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "strongAndSolidProof/dailyReport/view/viewPeopleDel",
+				"style":
+					{
+						"navigationBarTitleText": "情况统计",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "strongAndSolidProof/dailyReport/list/pointReportList",
+				"style":
+					{
+						"navigationBarTitleText": "填报情况",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "strongAndSolidProof/eventReport/index",
+				"style":
+					{
+						"navigationBarTitleText": "防控事件统计",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "strongAndSolidProof/eventReport/view/viewEventDel",
+				"style":
+					{
+						"navigationBarTitleText": "情况统计",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "strongAndSolidProof/eventReport/list/list",
+				"style":
+					{
+						"navigationBarTitleText": "填报情况",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "opinionSuggestion/index",
+				"style":
+					{
+						"navigationBarTitleText": "意见建议",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "opinionSuggestion/list/list",
+				"style":
+					{
+						"navigationBarTitleText": "意见建议",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "opinionSuggestion/list/publicList",
+				"style":
+					{
+						"navigationBarTitleText": "我的填报",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "opinionSuggestion/view/view",
+				"style":
+					{
+						"navigationBarTitleText": "意见建议信息",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "opinionSuggestion/view/publicView",
+				"style":
+					{
+						"navigationBarTitleText": "意见建议信息",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/householderDailyReport/report",
+				"style":
+					{
+						"navigationBarTitleText": "户长日报",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/householderDailyReport/reportList",
+				"style":
+					{
+						"navigationBarTitleText": "填报记录",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/householderDailyReport/view",
+				"style":
+					{
+						"navigationBarTitleText": "填报详情",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/villagerDynamicMonitoring/report",
+				"style":
+					{
+						"navigationBarTitleText": "村民动态监测",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/villagerDynamicMonitoring/reportList",
+				"style":
+					{
+						"navigationBarTitleText": "填报记录",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/villagerDynamicMonitoring/view",
+				"style":
+					{
+						"navigationBarTitleText": "填报详情",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/householdIncidentReport/report",
+				"style":
+					{
+						"navigationBarTitleText": "案件报送",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/householdIncidentReport/reportList",
+				"style":
+					{
+						"navigationBarTitleText": "填报记录",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/householdIncidentReport/view",
+				"style":
+					{
+						"navigationBarTitleText": "填报详情",
+						"enablePullDownRefresh": false
+					}
+			},  {
+				"path": "preventionAndControlSlice/patrioticHealth/report",
+				"style":
+					{
+						"navigationBarTitleText": "爱国卫生",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/patrioticHealth/reportList",
+				"style":
+					{
+						"navigationBarTitleText": "填报记录",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/patrioticHealth/view",
+				"style":
+					{
+						"navigationBarTitleText": "填报详情",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/levelFourDailyReport/report",
+				"style":
+					{
+						"navigationBarTitleText": "片长日报",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/levelFourDailyReport/reportList",
+				"style":
+					{
+						"navigationBarTitleText": "填报记录",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/levelFourDailyReport/view",
+				"style":
+					{
+						"navigationBarTitleText": "填报详情",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/levelThreeDailyReport/report",
+				"style":
+					{
+						"navigationBarTitleText": "片长日报",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/levelThreeDailyReport/reportList",
+				"style":
+					{
+						"navigationBarTitleText": "填报记录",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/levelThreeDailyReport/view",
+				"style":
+					{
+						"navigationBarTitleText": "填报详情",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/dailyReportsummary/summary",
+				"style":
+					{
+						"navigationBarTitleText": "工作情况汇总",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "preventionAndControlSlice/caseReportsummary/summary",
+				"style":
+					{
+						"navigationBarTitleText": "案件汇总",
+						"enablePullDownRefresh": false
+					}
+			}
+		]
+	},
+	{
+		"root": "disputesResolvePlatform",
+		"pages": [
+			{
+				"path": "spearAdjustableCenter/public/mediationToDeclare/publicIndex",
+				"style":
+					{
+						"navigationBarTitleText": "景洪市矛盾纠纷多元化解平台",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "spearAdjustableCenter/public/mediationToDeclare/index",
+				"style":{ "navigationBarTitleText": "矛盾纠纷调解申报" }
+			}, {
+				"path": "spearAdjustableCenter/addPeople/addApplicant",
+				"style": { "navigationBarTitleText": "添加申请人" }
+			}, {
+				"path": "spearAdjustableCenter/addPeople/addRespondent",
+				"style": { "navigationBarTitleText": "添加被申请人" }
+			}, {
+				"path": "spearAdjustableCenter/public/mediationToDeclare/mediationList",
+				"style":{ "navigationBarTitleText": "我的调解" }
+			}, {
+				"path": "spearAdjustableCenter/public/mediationToDeclare/linkMediate",
+				"style":{ "navigationBarTitleText": "纠纷调解在线查询" }
+			}, {
+				"path": "spearAdjustableCenter/public/mediationToDeclare/view",
+				"style":{ "navigationBarTitleText": "调解信息" }
+			}, {
+				"path": "spearAdjustableCenter/public/legalAdvice/publicIndex",
+				"style":
+					{
+						"navigationBarTitleText": "法律服务咨询",
+						"enablePullDownRefresh": false
+					}
+			}, {
+				"path": "spearAdjustableCenter/public/legalAdvice/index",
+				"style":{ "navigationBarTitleText": "法律服务咨询" }
+			}, {
+				"path": "spearAdjustableCenter/public/legalAdvice/legalAdviceList",
+				"style":{ "navigationBarTitleText": "我的咨询" }
+			}, {
+				"path": "spearAdjustableCenter/public/legalAdvice/view",
+				"style":{ "navigationBarTitleText": "咨询详情" }
+			}, {
+				"path": "spearAdjustableCenter/staff/registration/index",
+				"style":{ "navigationBarTitleText": "纠纷登记" }
+			}, {
+				"path": "spearAdjustableCenter/staff/accept/acceptList",
+				"style":{ "navigationBarTitleText": "纠纷受理" }
+			}, {
+				"path": "spearAdjustableCenter/staff/accept/accept",
+				"style":{ "navigationBarTitleText": "纠纷受理" }
+			}, {
+				"path": "spearAdjustableCenter/staff/shunt/shuntList",
+				"style":{ "navigationBarTitleText": "纠纷流转" }
+			}, {
+				"path": "spearAdjustableCenter/staff/shunt/shunt",
+				"style":{ "navigationBarTitleText": "纠纷流转" }
+			}, {
+				"path": "spearAdjustableCenter/staff/comment/handleShunt",
+				"style":{ "navigationBarTitleText": "纠纷流转" }
+			}, {
+				"path": "spearAdjustableCenter/staff/selectOrg/selectMainOrg",
+				"style": { "navigationBarTitleText": "选择机构" }
+			}, {
+				"path": "spearAdjustableCenter/staff/selectOrg/selectViceOrg",
+				"style": { "navigationBarTitleText": "选择机构" }
+			}, {
+				"path": "spearAdjustableCenter/staff/transferred/transferredList",
+				"style":{ "navigationBarTitleText": "纠纷调解" }
+			}, {
+				"path": "spearAdjustableCenter/staff/transferred/transferred",
+				"style":{ "navigationBarTitleText": "纠纷调解" }
+			}, {
+				"path": "spearAdjustableCenter/staff/comment/handleAddDCJL",
+				"style":{ "navigationBarTitleText": "纠纷调解" }
+			}, {
+				"path": "spearAdjustableCenter/staff/comment/handleAddZJCL",
+				"style":{ "navigationBarTitleText": "纠纷调解" }
+			}, {
+				"path": "spearAdjustableCenter/staff/comment/handleAddTJJL",
+				"style":{ "navigationBarTitleText": "纠纷调解" }
+			}, {
+				"path": "spearAdjustableCenter/staff/comment/handleAddXYS",
+				"style":{ "navigationBarTitleText": "纠纷调解" }
+			}, {
+				"path": "spearAdjustableCenter/staff/comment/handleAddJFHF",
+				"style":{ "navigationBarTitleText": "纠纷调解" }
+			}, {
+				"path": "spearAdjustableCenter/staff/comment/handleAddSFQR",
+				"style":{ "navigationBarTitleText": "纠纷调解" }
+			}, {
+				"path": "spearAdjustableCenter/staff/oversee/oversee",
+				"style":{ "navigationBarTitleText": "纠纷调解催办" }
+			}, {
+				"path": "spearAdjustableCenter/staff/comment/handleOversee",
+				"style":{ "navigationBarTitleText": "纠纷调解催办" }
+			}, {
+				"path": "spearAdjustableCenter/staff/returnVisit/returnVisit",
+				"style":{ "navigationBarTitleText": "纠纷调解回访" }
+			}, {
+				"path": "zongZhiService/publicIndex",
+				"style":{ "navigationBarTitleText": "综治服务" }
+			}, {
+				"path": "zongZhiService/serviceReport",
+				"style":{ "navigationBarTitleText": "综治服务" }
+			}, {
+				"path": "zongZhiService/comment/serviceType",
+				"style":{ "navigationBarTitleText": "综治服务类型" }
+			}, {
+				"path": "zongZhiService/myServiceList",
+				"style":{ "navigationBarTitleText": "我的申报" }
+			}, {
+				"path": "zongZhiService/linkService",
+				"style":{ "navigationBarTitleText": "综治服务在线查询" }
+			}, {
+				"path": "zongZhiService/view",
+				"style":{ "navigationBarTitleText": "综治服务办理信息" }
+			}
+		]
+	},{
+		"root": "digitalCertificates",
+		"pages": [
+			{
+				"path": "certification/index",
+				"style":
+					{
+						"navigationBarTitleText": "数字认证",
+						"enablePullDownRefresh": false
+					}
+			},
+			{
+				"path": "certification/personnelInformation",
+				"style":
+					{
+						"navigationBarTitleText": "信息采集",
+						"enablePullDownRefresh": false
+					}
+			},
+			{
+				"path": "scanCode/index",
+				"style":
+					{
+						"navigationBarTitleText": "认证识别",
+						"enablePullDownRefresh": false
+					}
+			},
+			{
+				"path": "userInfo/index",
+				"style":
+					{
+						"navigationBarTitleText": "详细信息",
+						"enablePullDownRefresh": false
+					}
+			},
+			{
+				"path": "accessRecords/list",
+				"style":
+					{
+						"navigationBarTitleText": "通行记录",
+						"enablePullDownRefresh": false
+					}
+			},
+			{
+				"path": "accessRecords/view",
+				"style":
+					{
+						"navigationBarTitleText": "通行记录详情",
+						"enablePullDownRefresh": false
+					}
+			}
+		]
+	}],
+	"globalStyle": {
+		"mp-alipay": {
+			"transparentTitle": "none"
+		},
+		"navigationBarBackgroundColor": "#1261d4",
+		"navigationBarTitleText": "景洪社会治理",
+		"navigationStyle": "default",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"color": "#C0C0C0",
+		"selectedColor": "#1261d4",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "惠平安",
+				"iconPath": "eventReport/static/img/yijianJB.png",
+				"selectedIconPath": "eventReport/static/img/yijianJBHL.png"
+			},
+			{
+				"pagePath": "pages/infomation/newlist/newlist",
+				"text": "汇平安",
+				"iconPath": "eventReport/static/img/gongzuoquan.png",
+				"selectedIconPath": "eventReport/static/img/gongzuoquanHL.png"
+			},
+			{
+				"pagePath": "pages/main/main",
+				"text": "慧平安",
+				"iconPath": "eventReport/static/img/pingtai.png",
+				"selectedIconPath": "eventReport/static/img/pingtaiHL.png"
+			}
+		]
+	}
+}
